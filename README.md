@@ -42,7 +42,7 @@
 | 2              | Dean          | l2          | SGD       | val\_loss, patience=5      | None         | 0.6829   | 0.4378   | 0.3164 | 0.7105    |
 | 3              | Chance        | l1          | RMSprop   | None                       | 0.3          | 0.7073   | 0.4754   | 0.3398 | 0.7909    |
 | 4              | Christophe    | l2          | RMSprop   | val\_loss, patience=5      | 0.3 & 0.2    | 0.6753   | 0.4675   | 0.3516 | 0.6977    |
-| 5              | Lesly         | l2          | AdamW      | val\_accuracy, patience=8 | 0.4 & 0.3    | 0.6784   | 0.4196   | 0.3008 | 0.6937    |
+| 5              | Lesly         | l2          | AdamW      | val\_accuracy, patience=8 | 0.4 & 0.3    | 0.6951   | 0.4536   | 0.3242 | 0.7545    |
 
 ---
 
