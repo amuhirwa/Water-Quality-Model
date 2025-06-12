@@ -107,28 +107,43 @@ I used **l2 regularization**, **RMSprop**, **EarlyStopping** on `val_loss`, and 
 
 **Performance Recap:**
 
-* **Accuracy:** 0.6753
-* **F1 Score:** 0.4675
-* **Recall:** 0.3516
-* **Precision:** 0.6977
+* **Accuracy:** 0.6905  
+* **F1 Score:** 0.5246  
+* **Recall:** 0.4375  
+* **Precision:** 0.6550  
+
+---
 
 **Interpretation:**
 
-* Best **recall** among all models, showing my model was best at identifying positives.
-* **F1 score (0.4675)** was close to Chance’s, indicating a strong balance.
-* Slightly lower **precision (0.6977)**, suggesting a few more false positives compared to Michael or Lesly.
+* Best **recall** among all models, showing my model was most effective at identifying true positives.  
+* Highest **F1 score (0.5246)**, meaning my model achieved the best balance between precision and recall.  
+* **Precision (0.6550)** was slightly lower than Michael (0.7500) and Dean (0.7105), indicating a few more false positives, but still strong overall.
+
+---
 
 **Comparison with Teammates:**
 
-* **Better recall than all**: even Chance (0.3516 vs 0.3398), proving the dropout layers helped reduce overfitting.
-* **Slightly worse accuracy and precision** than Chance, indicating some trade-off.
+* **Better recall than all** teammates:
+  - Chance: 0.4141  
+  - Lesly: 0.3281  
+  - Dean: 0.3164  
+  - Michael: 0.2930  
+
+* **Highest F1 score**, even ahead of Chance (0.5146), confirming strong performance in both precision and recall.  
+* **Accuracy (0.6905)** just slightly behind Chance (0.6951), showing a well-rounded model despite the recall boost.
+
+---
 
 **Why My Model Was Strong:**
 
-1. **Dual dropout** helped prevent overfitting and boosted recall.
-2. **EarlyStopping on `val_loss`** targeted generalization better than accuracy-based stopping.
+1. **Dual dropout layers (30% and 20%)** helped reduce overfitting and improve generalization, especially in detecting positives.  
+2. **L2 regularization** added penalty to complex weights, controlling model complexity.  
+3. **RMSprop optimizer** provided stable and adaptive learning rate updates, leading to efficient convergence.  
+4. **EarlyStopping on `val_loss`** avoided unnecessary training and helped capture the best version of the model.
 
 ---
+
 
 ### **Lesly**
 
